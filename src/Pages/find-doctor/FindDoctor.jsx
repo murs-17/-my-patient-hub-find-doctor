@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import MakeAppointment from './MakeAppointment';
 import DoctorProfile from './DoctorProfile'; 
-  import ResultTabs from '../../ui/mursal/components/find-doctor/ResultTabs';
-  import FilterPanel from '../../ui/mursal/components/find-doctor/FilterPanel';
-   import SortRow from '../../ui/mursal/components/find-doctor/SortRow'; 
-   import DoctorCard from '../../ui/mursal/components/find-doctor/DoctorCard'; 
-   import DoctorMap from '../../ui/mursal/components/find-doctor/DoctorMap'; 
+  import ResultTabs from '../../ui/mursal/components/Find-doctor/ResultTabs';
+  import FilterPanel from '../../ui/mursal/components/Find-doctor/FilterPanel';
+   import SortRow from '../../ui/mursal/components/Find-doctor/SortRow'; 
+   import DoctorCard from '../../ui/mursal/components/Find-doctor/DoctorCard'; 
+   import DoctorMap from '../../ui/mursal/components/Find-doctor/DoctorMap'; 
    import { doctors, findDoctor } from '../../ui/mursal/data/doctors';
 const LIST_PAGE = { type: 'list', doctor: null, visit: 'video' };
 function FindDoctor({ initialName, initialZip }) { const [tab, setTab] = useState('map'); const [activeSort, setActiveSort] = useState('next'); const [searchText, setSearchText] = useState(initialName ? initialName : ''); const [zipText, setZipText] = useState(initialZip ? initialZip : ''); const [specialty, setSpecialty] = useState(''); const [gender, setGender] = useState(''); const [condition, setCondition] = useState(''); const [language, setLanguage] = useState(''); const [ages, setAges] = useState([]); const [onlineOnly, setOnlineOnly] = useState(false); const [primaryOnly, setPrimaryOnly] = useState(false);
